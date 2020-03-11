@@ -2,8 +2,6 @@ package monitoring.service;
 
 import lombok.Data;
 
-import java.util.Date;
-
 /**
  * @Author: Administrator
  * @Date: 2020/3/5 :21:09
@@ -19,16 +17,16 @@ public class DeviceBo {
     /**
      * 开始时间
      */
-    private Date startTime;
+    private long startTime;
 
     /**
      * 结束时间
      */
-    private Date endTime;
+    private long endTime;
 
     /**
      * 设备开发者code
      */
-    private Integer code;
+    private Integer dataSourceType;
 
 }

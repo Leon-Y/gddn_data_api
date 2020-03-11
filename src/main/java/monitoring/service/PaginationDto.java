@@ -8,7 +8,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Data
-public class Pagination<T> {
+public class PaginationDto<T> {
     /**
      * 总页数
      */

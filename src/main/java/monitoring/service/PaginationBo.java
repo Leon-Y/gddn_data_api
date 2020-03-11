@@ -1,8 +1,6 @@
-package monitoring.distributionbox;
+package monitoring.service;
 
 import lombok.Data;
-
-import java.util.Date;
 
 /**
  * @Author: Administrator
@@ -10,7 +8,7 @@ import java.util.Date;
  * @Description:
  */
 @Data
-public class DistributionBoxRunDataDto {
+public class PaginationBo {
 
     /**
      * 厂商类型
