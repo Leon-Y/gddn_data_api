@@ -1,16 +1,17 @@
-package monitoring.electricity;
+package monitoring.service;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
 
 /**
  * @Author: Administrator
- * @Date: 2020/3/3 :16:54
+ * @Date: 2020/3/11 :17:33
  * @Description:
  */
 @Data
-public class EletricityLiveDataDto {
+public class WaterELectricityDataDto {
 
     /**
      * 起码
@@ -25,12 +26,14 @@ public class EletricityLiveDataDto {
     /**
      * 起码时间
      */
-    private Date startTime;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date gmtStart;
 
     /**
      * 止码时间
      */
-    private Date endTime;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date gmtEnd;
 
     /**
      * 差值

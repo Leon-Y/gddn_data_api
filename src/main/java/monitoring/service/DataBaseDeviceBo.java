@@ -4,13 +4,13 @@ import lombok.Data;
 
 /**
  * @Author: Administrator
- * @Date: 2020/3/5 :21:09
- * @Description:设备描述bo
+ * @Date: 2020/3/11 :15:48
+ * @Description:
  */
 @Data
-public class DeviceBo {
+public class DataBaseDeviceBo {
     /**
-     * 设备号
+     * 设备号，数组，逗号相隔
      */
     private String deviceSn;
 
@@ -28,5 +28,15 @@ public class DeviceBo {
      * 设备开发者code
      */
     private Integer dataSourceType;
+
+    /**
+     * 设备数据粒度 时间类型:1-小时；2-天；3-月；4-年
+     */
+    private Integer timeType;
+
+    /**
+     * 设备类型:7-水表；8-电表
+     */
+    private Integer deviceType;
 
 }
