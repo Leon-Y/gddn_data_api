@@ -1,5 +1,7 @@
 package monitoring.service;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -7,6 +9,7 @@ import java.util.Date;
  * @Date: 2020/3/13 :15:13
  * @Description:iot平台设备
  */
+@Data
 public class DeviceDto  {
 
     /**
