@@ -26,13 +26,13 @@ public class WaterELectricityDataDto {
     /**
      * 起码时间
      */
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date gmtStart;
 
     /**
      * 止码时间
      */
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date gmtEnd;
 
     /**
